@@ -509,18 +509,21 @@ h3.my-profession{
     margin: 0 auto 30px;
     text-align: center;
 }
+.service .service-item .service-item-inner .icon img{
+    margin-top: 6px;
+    width: 50px;
+    height: auto;
+    transition: all 0.4 ease;
+}
 .service .service-item .service-item-inner .icon .fa{
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
-    transition: all 0.3 ease;
+    transition: all 1 ease;
 }
-.service .service-item .service-item-inner:hover .icon{
-    background: var(--skin-color);
-}
-.service .service-item .service-item-inner:hover .icon .fa{
-    font-size: 25px;
-    color: white;
+.service .service-item .service-item-inner .icon img:hover{
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
 }
 .service .service-item .service-item-inner h4{
     font-size: 18px;
@@ -686,5 +689,11 @@ h3.my-profession{
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+@media (max-width:367px)
+{
+    .about .about-content .personal-info .buttons a, .home .home-info a{
+        margin-top: 5px;
     }
 }
